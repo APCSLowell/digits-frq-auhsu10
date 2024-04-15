@@ -8,7 +8,7 @@ public class Digits
 	public Digits(int num)
 	{ /* to be implemented in part (a) */ 
 	    for(int i=0;i<(num+"").length();i++)
-		digitList.add((int)((num+"").substring(i,i+1)));
+		digitList.add(Integer.parseInt((num+"").substring(i,i+1)));
 	}
 
 	public boolean isStrictlyIncreasing()
